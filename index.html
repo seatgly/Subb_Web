@@ -5,110 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastro Chef - доставка здорового питанния</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="Gastro Chef">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="programs.html">Программы питания</a></li>
-                <li><a href="lunches.html">Бизнес-ланчи</a></li>
-                <li><a href="shop.html">Gastro Shop</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="blog.html">Блог</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="ru">RU</a>
-            <a href="ua">UA</a>
-            <a href="en">EN</a>
-        </div>
-        <a href="tel:+380689494919">+38 (068) 949-49-19</a>
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo" href="index.html">
+                <img src="assets/images/logo.png" alt="Gastro Chef">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="programs.html">Программы питания</a></li>
+                    <li class="header__item"><a class="header__link" href="lunches.html">Бизнес-ланчи</a></li>
+                    <li class="header__item"><a class="header__link" href="shop.html">Gastro Shop</a></li>
+                    <li class="header__item"><a class="header__link" href="about.html">О нас</a></li>
+                    <li class="header__item"><a class="header__link" href="blog.html">Блог</a></li>
+                </ul>
+            </nav>
+            <div class="header__lang">
+                <a class="header__lang-link header__lang-link--active" href="ru">RU</a>
+                <a class="header__lang-link" href="ua">UA</a>
+                <a class="header__lang-link" href="en">EN</a>
+            </div>
+            <a class="header__phone" href="tel:+380689494919">+38 (068) 949-49-19</a>
+    </div>
     </header>
     <main>
-        <aside>
-        <ul>
-            <li>
-            <a href="kcal.html" aria-label="Фильтр: Калорийность 800-2400">
-                <img src="assets/images/icons/kcal.png" alt="" aria-hidden="true">
+        <aside class="filters">
+        <ul class="filters__list">
+            <li class="filters__item">
+            <a class="filters__link" href="kcal.html" aria-label="Фильтр: Калорийность 800-2400">
+                <img class="filters__icon" src="assets/images/icons/kcal.png" alt="" aria-hidden="true">
             </a>
             </li>
-            <li>
-            <a href="fish.html" aria-label="Фильтр: Рыбные блюда">
-                <img src="assets/images/icons/fish.png" alt="" aria-hidden="true">
+            <li class="filters__item">
+            <a class="filters__link" href="fish.html" aria-label="Фильтр: Рыбные блюда">
+                <img class="filters__icon" src="assets/images/icons/fish.png" alt="" aria-hidden="true">
             </a>
             </li>
-            <li>
-            <a href="carrot.html" aria-label="Фильтр: Вегетарианские блюда">
-                <img src="assets/images/icons/carrot.png" alt="" aria-hidden="true">
+            <li class="filters__item">
+            <a class="filters__link" href="carrot.html" aria-label="Фильтр: Вегетарианские блюда">
+                <img class="filters__icon" src="assets/images/icons/carrot.png" alt="" aria-hidden="true">
             </a>
             </li>
-            <li>
-            <a href="detox.html" aria-label="Фильтр: Детокс">
-                <img src="assets/images/icons/detox.png" alt="" aria-hidden="true">
+            <li class="filters__item">
+            <a class="filters__link" href="detox.html" aria-label="Фильтр: Детокс">
+                <img class="filters__icon" src="assets/images/icons/detox.png" alt="" aria-hidden="true">
             </a>
             </li>
-            <li>
-            <a href="keto.html" aria-label="Фильтр: Кето блюда">
-                <img src="assets/images/icons/keto.png" alt="" aria-hidden="true">
+            <li class="filters__item">
+            <a class="filters__link" href="keto.html" aria-label="Фильтр: Кето блюда">
+                <img class="filters__icon" src="assets/images/icons/keto.png" alt="" aria-hidden="true">
             </a>
             </li>
-            <li>
-            <a href="fivetable.html" aria-label="Фильтр: 5 стол">
-                <img src="assets/images/icons/fivetable.png" alt="" aria-hidden="true">
+            <li class="filters__item">
+            <a class="filters__link" href="fivetable.html" aria-label="Фильтр: 5 стол">
+                <img class="filters__icon" src="assets/images/icons/fivetable.png" alt="" aria-hidden="true">
             </a>
             </li>
         </ul>
         </aside>
 
-        <section aria-label="Промо-предложение">
-            <article>
-                <h1>Detox программа – вкусное очищение организма</h1>
-                <p>8 бутылочек натуральных смузи и фрешей.</p>
+        <section class="hero container" aria-label="Промо-предложение">
+            <article class="hero__content">
+                <h1 class="hero__title">Detox программа – вкусное очищение организма</h1>
+                <p class="hero__text">8 бутылочек натуральных смузи и фрешей.</p>
                 <a href="#order" class="btn">Заказать</a>
-                <p>Пробный день всего <strong>427 грн</strong></p>
-                <img src="assets/images/detox-banner.png" alt="Бутылочки смузи Detox и авокадо">
+                <p class="hero__price">Пробный день всего <strong>427 грн</strong></p>
+                <img class="hero__image" src="assets/images/detox-banner.png" alt="Бутылочки смузи Detox и авокадо">
             </article>
         </section>
 
-        <div>
-            <div>
+        <div class="chat">
+            <div class="chat__bubble">
                 <p>Мы онлайн! Консультация и -30% в чате. Без звонка!</p>
             </div>
 
-            <div>
-                <span>1</span>
-                <button type="button" aria-label="Открыть чат поддержки">
+            <div class="chat__controls">
+                <span class="chat__counter">1</span>
+                <button class="chat__button" type="button" aria-label="Открыть чат поддержки">
                     <img src="assets/images/icons/chat.png" alt="">
                 </button>
-                <button type="button" aria-label="Закрыть чаты поддержки">
+                <button class="chat__button" type="button" aria-label="Закрыть чаты поддержки">
                     <img src="assets/images/icons/close.png" alt="">
                 </button>
             </div>
-
-            <ul>
-                <li>
-                    <a href="https://t.me" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+            <ul class="chat__messengers">
+                <li class="chat__item">
+                    <a class="chat__link" href="https://t.me" target="_blank" rel="noopener" aria-label="Написать в Telegram">
                         <img src="assets/images/icons/telegram.png" alt="">
                     </a>
                 </li>
-                <li>
-                    <a href="https://viber.com" target="_blank" rel="noopener" aria-label="Написать в Viber">
+                <li class="chat__item">
+                    <a class="chat__link" href="https://viber.com" target="_blank" rel="noopener" aria-label="Написать в Viber">
                         <img src="assets/images/icons/viber.png" alt="">
                     </a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Перейти в Instagram">
+            <ul class="chat__socials">
+                <li class="chat__item">
+                    <a class="chat__link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Перейти в Instagram">
                          <img src="assets/images/icons/instagram.png" alt="">
                     </a>
                 </li>
-                <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Перейти в Facebook">
+                <li class="chat__item">
+                    <a class="chat__link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Перейти в Facebook">
                         <img src="assets/images/icons/facebook.png" alt="">
                     </a>
                 </li>
@@ -116,153 +118,151 @@
 
         </div>
 
-        <section>
+        <section class="benefits container">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul>
-                <li>
-                    <img src="assets/images/icons/package.png" alt="">
-                    <h3>Бережем природу. Эко-тара и приборы.</h3>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/package.png" alt="">
+                    <h3 class="benefits__text">Бережем природу. Эко-тара и приборы.</h3>
                 </li>
-                <li>
-                    <img src="assets/images/icons/dish.png" alt="">
-                    <h3>28 дней без повторения, более 300 блюд!</h3>
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/dish.png" alt="">
+                    <h3 class="benefits__text">28 дней без повторения, более 300 блюд!</h3>
                 </li>
-                <li>
-                    <img src="assets/images/icons/free.png" alt="">
-                    <h3>Бесплатно заменяем блюда и ингредиенты.</h3>
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/free.png" alt="">
+                    <h3 class="benefits__text">Бесплатно заменяем блюда и ингредиенты.</h3>
                 </li>
-                <li>
-                    <img src="assets/images/icons/night.png" alt="">
-                    <h3>Готовим ночью, упаковываем и отправляем Вам!</h3>
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/night.png" alt="">
+                    <h3 class="benefits__text">Готовим ночью, упаковываем и отправляем Вам!</h3>
                 </li>
-                <li>
-                    <img src="assets/images/icons/delivery.png" alt="">
-                    <h3>Ежедневная и удобная доставка с 6:00 до 10:00</h3>
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/delivery.png" alt="">
+                    <h3 class="benefits__text">Ежедневная и удобная доставка с 6:00 до 10:00</h3>
                 </li>
-                <li>
-                    <img src="assets/images/icons/energy.png" alt="">
-                    <h3>Сохраняем вашу энергию и до 14 часов в неделю освобождая от готовки!</h3>
+                <li class="benefits__item">
+                    <img class="benefits__icon" src="assets/images/icons/energy.png" alt="">
+                    <h3 class="benefits__text">Сохраняем вашу энергию и до 14 часов в неделю освобождая от готовки!</h3>
                 </li>
 
             </ul>
         
         </section>
 
-        <section>
-            <div>
+        <section class="programs container">
+            <div class="programs__tabs">
                 <h2 class="visually-hidden">Выбор программы питания</h2>
-                <button type="button">Программы питания</button>
-                <button type="button">Специальные программы</button>
+                <button class="programs__tab programs__tab--active" type="button">Программы питания</button>
+                <button class="programs__tab" type="button">Специальные программы</button>
             </div>
-            <section>
+            <section class="programs__panel">
                 <h2 class="visually-hidden">Программы питания</h2>
-                <ul>
-                    <li><button>EXPRESS FIT <span>800 ккал</span></button></li>
-                    <li><button>SLIM <span>1000 ккал</span></button></li>
-                    <li><button>FITNESS <span>1300 ккал</span></button></li>
-                    <li><button>BALANCE <span>1600 ккал</span></button></li>
-                    <li><button>BALANCE + <span>1800 ккал</span></button></li>
-                    <li><button>STRONG <span>2000 ккал</span></button></li>
-                    <li><button>MAXI FIT <span>2400 ккал</span></button></li>
+                <ul class="programs__list">
+                    <li class="programs__item"><button class="programs__option">EXPRESS FIT <span>800 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option">SLIM <span>1000 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option programs__option--active">FITNESS <span>1300 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option">BALANCE <span>1600 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option">BALANCE + <span>1800 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option">STRONG <span>2000 ккал</span></button></li>
+                    <li class="programs__item"><button class="programs__option">MAXI FIT <span>2400 ккал</span></button></li>
                 </ul>
-                <div>
-                    <div>
-                        <h3>Fitness</h3>
-                        <h4>1300 ккал</h4>
-                        <p>Программа здорового питания Express Fit. Идеальна для: похудения в кратчайшие сроки, повышения энергии и сил, снижения веса при сидячем образе жизни. </p>
+                <div class="programs__details">
+                    <div class="program-card">
+                        <h3 class="program-card__title">Fitness</h3>
+                        <h4 class="program-card__calories">1300 ккал</h4>
+                        <p class="program-card__text">Программа здорового питания Express Fit. Идеальна для: похудения в кратчайшие сроки, повышения энергии и сил, снижения веса при сидячем образе жизни. </p>
                     </div>
-                    <ul>
-                        <li>Тестовый день <del>510 грн</del> <span>357 грн</span></li>
-                        <li>1 день <span>510 грн</span></li>
-                        <li>от 7 дней <del>510 грн</del> <span>490 грн</span></li>
-                        <li>от 14 дней <del>510 грн</del> <span>470 грн</span></li>
-                        <li>от 30 дней <del>510 грн</del> <span>445 грн</span></li>
-                        <li>Завтрак и ужин <del>- 15%</del> <span>433 грн</span></li>
+                    <ul class="price-list">
+                        <li class="price-list__item">Тестовый день <del class="price-list__old">510 грн</del> <span class="price-list__new">357 грн</span></li>
+                        <li class="price-list__item">1 день <span>510 грн</span></li>
+                        <li class="price-list__item">от 7 дней <del class="price-list__old">510 грн</del> <span class="price-list__new">490 грн</span></li>
+                        <li class="price-list__item">от 14 дней <del class="price-list__old">510 грн</del> <span class="price-list__new">470 грн</span></li>
+                        <li class="price-list__item">от 30 дней <del class="price-list__old">510 грн</del> <span class="price-list__new">445 грн</span></li>
+                        <li class="price-list__item">Завтрак и ужин <del class="price-list__old">- 15%</del> <span class="price-list__new">433 грн</span></li>
                     </ul>
                     <a href="#order" class="btn">Заказать</a>
 
-                    <!-- Дни недели и меню -->
-                    <div>
-                        <!-- Дни недели -->
-                         <ul>
-                            <li><button type="button">ПН</button></li>
-                            <li><button type="button">ВТ</button></li>
-                            <li><button type="button">СР</button></li>
-                            <li><button type="button">ЧТ</button></li>
-                            <li><button type="button">ПТ</button></li>
-                            <li><button type="button">СБ</button></li>
-                            <li><button type="button">ВС</button></li>
+                    <div class="programs__menu">
+                         <ul class="week-tabs">
+                            <li class="week-tabs__item"><button class="week-tabs__button week-tabs__button--active" type="button">ПН</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">ВТ</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">СР</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">ЧТ</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">ПТ</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">СБ</button></li>
+                            <li class="week-tabs__item"><button class="week-tabs__button" type="button">ВС</button></li>
                         </ul>
                         
-                        <ul>
-                            <li>
-                                <div>
-                                    <h3>Завтрак</h3>
-                                    <span>7:00 - 9:00 </span>
+                        <ul class="meal-plan">
+                            <li class="meal-plan__item">
+                                <div class="meal-plan__head">
+                                    <h3 class="meal-plan__title">Завтрак</h3>
+                                    <span class="meal-plan__time">7:00 - 9:00 </span>
                                 </div>
-                                <div>
-                                    <p>- Фриттата с сыром и кабачками</p>
+                                <div class="meal-plan__dishes">
+                                    <p class="meal-plan__dish">- Фриттата с сыром и кабачками</p>
                                 </div>
-                                <div>
-                                    <span>170гр</span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <h3>2-й завтрак</h3>
-                                    <span>10:00 - 12:00 </span>
-                                </div>
-                                <div>
-                                    <p>- Фермерский йогурт</p>
-                                    <p>- Полезное печенье из сухофруктов и орехов</p>
-                                </div>
-                                <div>
-                                    <span>200гр</span>
-                                    <span>2 шт</span>
+                                <div class="meal-plan__weights">
+                                    <span class="meal-plan__weight">170гр</span>
                                 </div>
                             </li>
 
-                            <li>
-                                <div>
-                                    <h3>Обед</h3>
-                                    <span>13:00 - 15:00 </span>
+                            <li class="meal-plan__item">
+                                <div class="meal-plan__head">
+                                    <h3 class="meal-plan__title">2-й завтрак</h3>
+                                    <span class="meal-plan__time">10:00 - 12:00 </span>
                                 </div>
-                                <div>
-                                    <p>- Люля-кебаб из индейки</p>
-                                    <p>- Летний салат с маслинами и сыром</p>
+                                <div class="meal-plan__dishes">
+                                    <p class="meal-plan__dish">- Фермерский йогурт</p>
+                                    <p class="meal-plan__dish">- Полезное печенье из сухофруктов и орехов</p>
                                 </div>
-                                <div>
-                                    <span>100гр</span>
-                                    <span>100гр</span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <h3>Полдник</h3>
-                                    <span>16:00 - 17:30 </span>
-                                </div>
-                                <div>
-                                    <p>- Творожное суфле с какао и вишней</p>
-                                </div>
-                                <div>
-                                    <span>100гр</span>
+                                <div class="meal-plan__weights">
+                                    <span class="meal-plan__weight">200гр</span>
+                                    <span class="meal-plan__weight">2 шт</span>
                                 </div>
                             </li>
 
-                            <li>
-                                <div>
-                                    <h3>Ужин</h3>
-                                    <span>19:00 - 20:00 </span>
+                            <li class="meal-plan__item">
+                                <div class="meal-plan__head">
+                                    <h3 class="meal-plan__title">Обед</h3>
+                                    <span class="meal-plan__time">13:00 - 15:00 </span>
                                 </div>
-                                <div>
-                                    <p>- Рыбный терен</p>
-                                    <p>- Овощи гриль</p>
+                                <div class="meal-plan__dishes">
+                                    <p class="meal-plan__dish">- Люля-кебаб из индейки</p>
+                                    <p class="meal-plan__dish">- Летний салат с маслинами и сыром</p>
                                 </div>
-                                <div>
-                                    <span>100гр</span>
-                                    <span>150гр</span>
+                                <div class="meal-plan__weights">
+                                    <span class="meal-plan__weight">100гр</span>
+                                    <span class="meal-plan__weight">100гр</span>
+                                </div>
+                            </li>
+
+                            <li class="meal-plan__item">
+                                <div class="meal-plan__head">
+                                    <h3 class="meal-plan__title">Полдник</h3>
+                                    <span class="meal-plan__time">16:00 - 17:30 </span>
+                                </div>
+                                <div class="meal-plan__dishes">
+                                    <p class="meal-plan__dish">- Творожное суфле с какао и вишней</p>
+                                </div>
+                                <div class="meal-plan__weights">
+                                    <span class="meal-plan__weight">100гр</span>
+                                </div>
+                            </li>
+
+                            <li class="meal-plan__item">
+                                <div class="meal-plan__head">
+                                    <h3 class="meal-plan__title">Ужин</h3>
+                                    <span class="meal-plan__time">19:00 - 20:00 </span>
+                                </div>
+                                <div class="meal-plan__dishes">
+                                    <p class="meal-plan__dish">- Рыбный терен</p>
+                                    <p class="meal-plan__dish">- Овощи гриль</p>
+                                </div>
+                                <div class="meal-plan__weights">
+                                    <span class="meal-plan__weight">100гр</span>
+                                    <span class="meal-plan__weight">150гр</span>
                                 </div>
                             </li>
                             
@@ -280,90 +280,88 @@
 
         </section>
 
-        <section>
-            <h2>Фото блюд</h2>
-            <div>
-                <!-- Список всех фотографий -->
-                <ul>
-                    <li><img src="assets/images/dish/dish1.jpg" alt="Контейнеры с готовой едой Gastro Chef"></li>
-                    <li><img src="assets/images/dish/dish2.jpg" alt="Салат цезарь"></li>
-                    <li><img src="assets/images/dish/dish3.jpg" alt="Полезные смузи, авокадо и с ризотто с белыми грибами"></li>
-                    <li><img src="assets/images/dish/dish4.jpg" alt="Запеченный лосось с помидорами черри и брокколи"></li>
-                    <li><img src="assets/images/dish/dish5.jpg" alt="Куриное филе с зеленью"></li>
-                    <li><img src="assets/images/dish/dish6.jpg" alt="Салат с помидорами черри и сыром фета"></li>
+        <section class="gallery container">
+            <h2 class="gallery__title">Фото блюд</h2>
+            <div class="gallery__viewport">
+                <ul class="gallery__list">
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish1.jpg" alt="Контейнеры с готовой едой Gastro Chef"></li>
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish2.jpg" alt="Салат цезарь"></li>
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish3.jpg" alt="Полезные смузи, авокадо и с ризотто с белыми грибами"></li>
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish4.jpg" alt="Запеченный лосось с помидорами черри и брокколи"></li>
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish5.jpg" alt="Куриное филе с зеленью"></li>
+                    <li class="gallery__item"><img class="gallery__image" src="assets/images/dish/dish6.jpg" alt="Салат с помидорами черри и сыром фета"></li>
                 </ul>
             </div>
         </section>
 
-        <div>
+        <div class="order-faq container">
 
-            <section aria-label="Оформление заказа" id="order">
-                <h2>Оформить заказ</h2>
-                <p>Обсудите все детали заказа по телефону или сами укажите все подробности онлайн</p>
-                <form action="#" method="POST">
+            <section class="order" aria-label="Оформление заказа" id="order">
+                <h2 class="order__title">Оформить заказ</h2>
+                <p class="order__text">Обсудите все детали заказа по телефону или сами укажите все подробности онлайн</p>
+                <form class="form" action="#" method="POST">
                     
-                    <div>
-                        <label for="user_name">Имя</label>
-                        <input type="text" id="user_name" name="username" placeholder="Иван" autocomplete="name" required>
+                    <div class="form__field">
+                        <label class="form__label" for="user_name">Имя</label>
+                        <input class="form__input" type="text" id="user_name" name="username" placeholder="Иван" autocomplete="name" required>
                     </div>
 
-                    <div>
-                        <label for="user_phone">Номер телефона</label>
-                        <input type="tel" id="user_phone" name="phone" placeholder="097214063 2" autocomplete="tel" required>
+                    <div class="form__phone">
+                        <label class="form__label" for="user_phone">Номер телефона</label>
+                        <input class="form__input" type="tel" id="user_phone" name="phone" placeholder="097214063 2" autocomplete="tel" required>
                     </div>
 
-                    <fieldset>
-                        <legend>Дополнительные опции</legend>
-
-                        <div>
-                            <input type="checkbox" id="discount_option" name="discount" value="yes">
+                    <fieldset class="form__options">
+                        <legend class="visually-hidden">Дополнительные опции</legend>
+                        <div class="form__option">
+                            <input class="form__checkbox" type="checkbox" id="discount_option" name="discount" value="yes">
                             <label for="discount_option">Тест-день! Получить скидку -30%?</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" id="agreement_option" name="agreement" value="accepted" required>
+                            <input class="form__checkbox" type="checkbox" id="agreement_option" name="agreement" value="accepted" required>
                             <label for="agreement_option">Согласен с условиями сотрудничества</label>
                         </div>
                     </fieldset>
 
-                    <button type="submit" name="order_type" value="phone">Заказ по телефону</button>
-                    <span>или</span>
-                    <button type="submit" name="order_type" value="online">Онлайн заказ</button>
+                    <button class="btn btn--outline" type="submit" name="order_type" value="phone">Заказ по телефону</button>
+                    <span class="form__or">или</span>
+                    <button class="btn" type="submit" name="order_type" value="online">Онлайн заказ</button>
 
                 </form>
 
             </section>
 
-            <section aria-label="Часто задаваемые вопросы">
-                <h2>Часто задаваемые вопросы</h2>
+            <section class="faq" aria-label="Часто задаваемые вопросы">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
                 
-                <ul>
-                    <li>
-                        <button type="button">Как осуществляется доставка правильного питания?</button>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Как осуществляется доставка правильного питания?</button>
                     </li>
-                    <li>
-                        <button type="button">Можно ли менять время доставки/место?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Можно ли менять время доставки/место?</button>
                     </li>
-                    <li>
-                        <button type="button">Как и в чем приезжает еда?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Как и в чем приезжает еда?</button>
                     </li>
-                    <li>
-                        <button type="button">Когда Вы готовите?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Когда Вы готовите?</button>
                     </li>
-                    <li>
-                        <button type="button">Какие продукты Вы используете?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Какие продукты Вы используете?</button>
                     </li>
-                    <li>
-                        <button type="button">Я буду есть одно и то же?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">Я буду есть одно и то же?</button>
                     </li>
-                    <li>
-                        <button type="button">У меня аллергия и непереносимость определенных продуктов</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">У меня аллергия и непереносимость определенных продуктов</button>
                     </li>
-                    <li>
-                        <button type="button">В какой очередности все есть?</button>
+                    <li class="faq__item">
+                        <button class="faq__button" type="button">В какой очередности все есть?</button>
                     </li>
-                    <li>
-                        <button type="button">Можно ли замораживать программу?</button>
+                    <li class="faq__item">
+                        <button class="faq__button"s type="button">Можно ли замораживать программу?</button>
                     </li>
                 </ul>
             </section>
@@ -372,38 +370,39 @@
 
 
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="programs.html">Программы питания</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="lunches.html">Бизнес-ланчи</a></li>
-                <li><a href="shop.html">Gastro Shop</a></li>
-                <li><a href="blog.html">Блог</a></li>
-            </ul>
-        </nav>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="programs.html">Программы питания</a></li>
+                    <li class="footer__item"><a class="footer__link" href="about.html">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="lunches.html">Бизнес-ланчи</a></li>
+                    <li class="footer__item"><a class="footer__link" href="shop.html">Gastro Shop</a></li>
+                    <li class="footer__item"><a class="footer__link" href="blog.html">Блог</a></li>
+                </ul>
+            </nav>
 
-         <a href="index.html">
-            <img src="assets/images/logo_footer.png" alt="Главная страница сайта">
-            <span>сервис здорового питания</span>
-        </a>
+            <a class="footer__logo" href="index.html">
+                <img src="assets/images/logo_footer.png" alt="Главная страница сайта">
+                <span class="footer__slogan">сервис здорового питания</span>
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="terms.html">Условия сотрудничества</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
+            <nav class="footer__side">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="terms.html">Условия сотрудничества</a></li>
+                    <li class="footer__item"><a class="footer__link" href="faq.html">FAQ</a></li>
+                </ul>
 
-            <ul>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener"><img src="assets/images/icons/instagram.png" alt="Перейти в Instagram Gastro Chef"></a></li>
-                <li><a href="https://facebook.com" target="_blank" rel="noopener"><img src="assets/images/icons/facebook.png" alt="Перейти в Facebook Gastro Chef"></a></li>
-                <li><a href="https://viber.com" target="_blank" rel="noopener"><img src="assets/images/icons/viber.png" alt="Перейти в Viber Gastro Chef"></a></li>
-                <li><a href="https://t.me" target="_blank" rel="noopener"><img src="assets/images/icons/telegram.png" alt="Перейти в Telegram Gastro Chef"></a></li>
-            </ul>
+                <ul class="footer__socials">
+                    <li class="footer__item"><a class="footer__link" href="https://instagram.com" target="_blank" rel="noopener"><img src="assets/images/icons/instagram.png" alt="Перейти в Instagram Gastro Chef"></a></li>
+                    <li class="footer__item"><a class="footer__link" href="https://facebook.com" target="_blank" rel="noopener"><img src="assets/images/icons/facebook.png" alt="Перейти в Facebook Gastro Chef"></a></li>
+                    <li class="footer__item"><a class="footer__link" href="https://viber.com" target="_blank" rel="noopener"><img src="assets/images/icons/viber.png" alt="Перейти в Viber Gastro Chef"></a></li>
+                    <li class="footer__item"><a class="footer__link" href="https://t.me" target="_blank" rel="noopener"><img src="assets/images/icons/telegram.png" alt="Перейти в Telegram Gastro Chef"></a></li>
+                </ul>
 
-            <a href="tel:+380689494919">+38 (068) 949 - 49 - 19</a>
-        </nav>
-
+                <a class="footer__phone" href="tel:+380689494919">+38 (068) 949 - 49 - 19</a>
+            </nav>
+        </div>
     </footer>
 </body>
 
